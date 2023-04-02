@@ -1,47 +1,48 @@
-# Reloj multipropósito
+# ESP32-watchdog 
 
-Este será un reloj multipropósito que usara un MCU como algún ESP32, por su bajo costo y sus características como
-bluetooth y wifi.
+This watch will be a multipurpose watch, that will have some kind of Espressif's MCU because it's cheap a come with good features like
+Bluetooth and Wi-Fi.
 
-Quiero que se lo más compacto posible, así que el tamaño de la pantalla y el consumo de esta será una de las limitantes
+I want to have the more compact design, with that said, the screen and battery define the size watch. 
 
-Buscando en Aliexpress me encontré con las siguientes opciones 
+Searching on Aliexpress I found the next options 
 
-|ID|Tipo de tecnología|Consumo (mAh) - Voltage (V)|Intefaz de comunicación|Tamaño|Precio|Resolución|
+|ID|Technology type|Consumption (mAh) - Voltage (V)|Communication interface|Size|Price|Resolution|
 |-|-|-|-|-|-|-|
-|1|TFT-LCD|95mAh-5v|UART|47,5mm de diámetro x 27,0mm de altura|371 MX|240px|
-|2|Pantalla de papel electrónico Monocromo|0.15mAh|1.28in|574.29 MX 2 unidades| 128px|
+|1|TFT-LCD|95mAh-5v|UART|47,5mm diameter x 27,0mm de height|371 MX|240px|
+|2|Electronic paper screen Monochrome|0.15mAh|-|1.28in|574.29 MX 2 units| 128px|
 
 
 ## Links
 1. https://es.aliexpress.com/item/1005005295747021.html
 2. https://es.aliexpress.com/item/1005004555311346.html
 
-## Botones
-Para el control de las aplicaciones(modos de operación) es necesario contar con algún tipo de entradas,
-Como en los relojes comunes, la hora se configura con botones.
-Una de las opciones son botones capacitivos o microbotones como con los que cuentan los teléfonos
+## Buttons 
+For applications control it is needed to have some kind of inputs, like in common watches,with the hour configured through buttons.
+One option is to have capacitive buttons or micro-buttons.
 
-## Sensor touch capacitivo
-Con base a este documento https://ww1.microchip.com/downloads/en/AppNotes/Capacitive-Touch-Sensor-Design-Guide-DS00002934-B.pdf
-El tipo de arreglo de sensores que me parece mejor, es conocido como slide sensor, una buena forma de aplicarlo es con "Extend Interpolation"
+## Capacitive touch sensor
+Following this document https://ww1.microchip.com/downloads/en/AppNotes/Capacitive-Touch-Sensor-Design-Guide-DS00002934-B.pdf
+This type of sensor touch it seems the best option, it is called "slide sensor", at "Extend Interpolation" form.
 
+## Programming port 
+To program this watch is through UART protocol.
 
-## Puerto de programación
-Para la programación de este reloj es por medio de comunicación UART.
-Por lo cual es importante contar con un acceso rápido al puerto de programación
-Para lograr un fácil acceso será con el uso de pogo pins o (springs pins)
+Then is important to have easy access to them.
 
-## Consumo de ESP32 
+That can be achieved with pogo pin, aka "spring-loaded pin".
 
-|Modo|Consumo|
+## ESP32-S3's power consumption 
+
+|Mode|Power consumption|
 |-|-|
-|Recomendado|500(mA)|
+|Recommended|500(mA)|
 |deep sleep|7-8(uA)|
 |light sleep|240(uA)|
 |wifi|355mA|
 
-Suponiendo que quisiera usarlo con wifi en alguna aplicación por 3 horas en un dia y con la pantalla encendida.
-El consumo total sería=ESP32-500(mA)+Pantalla Monocromo(3.6mA)=503.6mAh
-**Así que aproximadamente es necesario una batería de 1.5A**
-Aunque aún se requiere comprobar los resultados
+In the case that I want to use Wi-Fi with another application running for three hours on a day and with powered on screen.
+
+The total consumption will be=(ESP32-S3)500mAh + (Monochrome screen) 3.6mAh = 503.6mAh
+
+But it requires further analysis
