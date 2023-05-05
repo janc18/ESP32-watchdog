@@ -46,3 +46,7 @@ In the case that I want to use Wi-Fi with another application running for three 
 The total consumption will be=(ESP32-S3)500mAh + (Monochrome screen) 3.6mAh = 503.6mAh
 
 But it requires further analysis
+
+## Conceptual design
+
+![design](./images/Conceptual_design.png)
