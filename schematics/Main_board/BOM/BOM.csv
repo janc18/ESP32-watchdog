@@ -1,0 +1,11 @@
+Component,#LCSC part,Quantity,Package
+ESD Protection Diode,C316054,3,0603
+USB Micro-B,C132563,1,SMD
+Attitude Sensor/Gyroscope,C967633,1,LGA-14
+Real Time Clock,C7440,1,SOIC-8
+LDO 3v3 600mA,C51118,1,SOT-25-5
+Battery Management ICs ,C202311,1,SOT-23-6
+Transceiver USB 2.0 ,C14267,1,SOP-16
+i2c Pull-up Resistor,C25804,2,0603
+100 nf,C14663,2,0603
+1uf,C59302,2,0603
