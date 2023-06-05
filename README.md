@@ -50,3 +50,11 @@ But it requires further analysis
 ## Conceptual design
 
 ![design](./images/Conceptual_design.png)
+
+## First PCB design
+
+![design_pcb](./schematics/Main_board/images/Main_board_1.png)
+
+![design_pcb_1](./schematics/Main_board/images/Main_board.png)
+
+![design_pcb_2](./images/watch_first_render.png)
