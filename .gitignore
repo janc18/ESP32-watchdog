@@ -3,6 +3,8 @@ Datasheet/
 **fp-info-cache
 **sym-lib-table
 **.FCStd1
+**.kicad_sch-bak
+
 # Flutter/Dart/Pub related
 **/doc/api/
 .dart_tool/
