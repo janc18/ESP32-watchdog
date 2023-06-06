@@ -13,6 +13,14 @@ Searching on Aliexpress I found the next options
 |2|Electronic paper screen Monochrome|0.15mAh|-|1.28in|574.29 MX 2 units| 128px|
 
 
+**I decided to use the next LCD screen**
+
+![lcd_screen](./images/lcd.png)
+
+[Here is the purchase link](https://es.aliexpress.com/item/1005004617618178.html)
+
+**Maybe in the next iteration I will choose for a smaller screen**
+
 ## Links
 1. https://es.aliexpress.com/item/1005005295747021.html
 2. https://es.aliexpress.com/item/1005004555311346.html
@@ -26,11 +34,7 @@ Following this document https://ww1.microchip.com/downloads/en/AppNotes/Capaciti
 This type of sensor touch it seems the best option, it is called "slide sensor", at "Extend Interpolation" form.
 
 ## Programming port 
-To program this watch is through UART protocol.
-
-Then is important to have easy access to them.
-
-That can be achieved with pogo pin, aka "spring-loaded pin".
+The programming port it will be a micro-usb with the CHG340
 
 ## ESP32-S3's power consumption 
 
@@ -42,10 +46,6 @@ That can be achieved with pogo pin, aka "spring-loaded pin".
 |wifi|355mA|
 
 In the case that I want to use Wi-Fi with another application running for three hours on a day and with powered on screen.
-
-The total consumption will be=(ESP32-S3)500mAh + (Monochrome screen) 3.6mAh = 503.6mAh
-
-But it requires further analysis
 
 ## Conceptual design
 
